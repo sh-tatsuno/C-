@@ -144,6 +144,7 @@ void Display(void) {
 	//-----------------------------------
 
 	//球
+	/*
 	for (int i = -10; i < 150; i += 10){
 		glPushMatrix();
 		glMaterialfv(GL_FRONT, GL_AMBIENT, ms_ruby.ambient);
@@ -162,15 +163,33 @@ void Display(void) {
 		glutSolidSphere(4.0, 20, 20);//引数：(半径, Z軸まわりの分割数, Z軸に沿った分割数)
 		glPopMatrix();
 	}
+	*/
 
-	/*
+	glPushMatrix();
+	glMaterialfv(GL_FRONT, GL_AMBIENT, ms_ruby.ambient);
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, ms_ruby.diffuse);
+	glMaterialfv(GL_FRONT, GL_SPECULAR, ms_ruby.specular);
+	glMaterialfv(GL_FRONT, GL_SHININESS, &ms_ruby.shininess);
+	glTranslated(0.0, 0.0, 0.0);//平行移動値の設定
+	glutSolidSphere(4.0, 20, 20);//引数：(半径, Z軸まわりの分割数, Z軸に沿った分割数)
+	glPopMatrix();
+	glPushMatrix();
+	glMaterialfv(GL_FRONT, GL_AMBIENT, ms_jade.ambient);
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, ms_jade.diffuse);
+	glMaterialfv(GL_FRONT, GL_SPECULAR, ms_jade.specular);
+	glMaterialfv(GL_FRONT, GL_SHININESS, &ms_jade.shininess);
+	glTranslated(-20, -20, 0.0);//平行移動値の設定
+	glutSolidSphere(4.0, 20, 20);//引数：(半径, Z軸まわりの分割数, Z軸に沿った分割数)
+	glPopMatrix();
+
+	
 	//立方体
 	glPushMatrix();
-	glMaterialfv(GL_FRONT, GL_DIFFUSE, green);
-	glTranslated(-10.0, -20.0, 0.0);//平行移動値の設定
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, yellow);
+	glTranslated(-10.0, 5.0, -20.0);//平行移動値の設定
 	glutSolidCube(10.0);//引数：(一辺の長さ)
 	glPopMatrix();
-	*/
+	
 
 	//円錐
 	glPushMatrix();
