@@ -1,0 +1,21 @@
+﻿2015/07/01 18:37:10 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\sho\Documents\Visual Studio 2013\Projects\BoxModoki\BoxModoki\BoxModoki.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\include /Zi /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt GlutData.cpp
+         GlutData.cpp
+     1>GlutData.cpp(69): warning C4305: '初期化中' : 'double' から 'GLfloat' へ切り詰めます。
+     1>GlutData.cpp(75): warning C4305: '初期化中' : 'double' から 'GLfloat' へ切り詰めます。
+     1>GlutData.cpp(79): warning C4305: '初期化中' : 'double' から 'GLfloat' へ切り詰めます。
+     1>GlutData.cpp(80): warning C4305: '初期化中' : 'double' から 'GLfloat' へ切り詰めます。
+     1>GlutData.cpp(81): warning C4305: '初期化中' : 'double' から 'GLfloat' へ切り詰めます。
+     1>GlutData.cpp(82): warning C4305: '初期化中' : 'double' から 'GLfloat' へ切り詰めます。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\sho\Documents\Visual Studio 2013\Projects\BoxModoki\x64\Debug\BoxModoki.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv\build\x64\vc12\lib opencv_core2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\sho\Documents\Visual Studio 2013\Projects\BoxModoki\x64\Debug\BoxModoki.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\sho\Documents\Visual Studio 2013\Projects\BoxModoki\x64\Debug\BoxModoki.lib" /MACHINE:X64 x64\Debug\GlutData.obj
+         x64\Debug\Main.obj
+         x64\Debug\Thread.obj
+         BoxModoki.vcxproj -> C:\Users\sho\Documents\Visual Studio 2013\Projects\BoxModoki\x64\Debug\BoxModoki.exe
+     1>プロジェクト "C:\Users\sho\Documents\Visual Studio 2013\Projects\BoxModoki\BoxModoki\BoxModoki.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:03.09
